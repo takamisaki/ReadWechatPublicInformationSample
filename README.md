@@ -4,6 +4,8 @@ Practice reading followers' info. from wechat public account via wechat API, usi
 
 # Usage
 
+(FYI, as just tested, this project cannot run because of server error, but the code is right.)
+
 1. This project is only implemented by Xcode on Mac, so please make sure you have installed Xcode on your Mac.
 
 2. Download the whole zip file and unzip it.
