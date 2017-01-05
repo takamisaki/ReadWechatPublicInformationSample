@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3kN-Gz-ygM">
+                                <rect key="frame" x="0.0" y="178" width="138" height="138"/>
+                                <color key="backgroundColor" red="0.72156862749999995" green="0.94509803920000002" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3kN-Gz-ygM" secondAttribute="height" multiplier="1:1" id="1xy-rK-dEY"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wsp-ow-GE9">
+                                <rect key="frame" x="138" y="178" width="138" height="138"/>
+                                <color key="backgroundColor" red="0.72156862749999995" green="0.94509803920000002" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myE-k3-FAG">
+                                <rect key="frame" x="0.0" y="338" width="414" height="60"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="5z9-zN-uWK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="get user head image">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="get user head image">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Mu-Ns-VaK"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UuT-tW-CiR">
+                                <rect key="frame" x="276" y="178" width="138" height="138"/>
+                                <color key="backgroundColor" red="0.72156862749999995" green="0.94509803920000002" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="myE-k3-FAG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4HZ-oQ-kBZ"/>
+                            <constraint firstItem="UuT-tW-CiR" firstAttribute="leading" secondItem="Wsp-ow-GE9" secondAttribute="trailing" id="5XH-N6-8WU"/>
+                            <constraint firstAttribute="trailing" secondItem="UuT-tW-CiR" secondAttribute="trailing" id="82E-q5-w6p"/>
+                            <constraint firstItem="Wsp-ow-GE9" firstAttribute="height" secondItem="3kN-Gz-ygM" secondAttribute="height" id="AU2-eq-juT"/>
+                            <constraint firstAttribute="trailing" secondItem="myE-k3-FAG" secondAttribute="trailing" id="CO8-tl-TJ7"/>
+                            <constraint firstItem="Wsp-ow-GE9" firstAttribute="top" secondItem="3kN-Gz-ygM" secondAttribute="top" id="Hbm-z3-PU2"/>
+                            <constraint firstItem="Wsp-ow-GE9" firstAttribute="leading" secondItem="3kN-Gz-ygM" secondAttribute="trailing" id="MWE-bR-JiJ"/>
+                            <constraint firstItem="UuT-tW-CiR" firstAttribute="top" secondItem="3kN-Gz-ygM" secondAttribute="top" id="QlV-OR-b63"/>
+                            <constraint firstItem="myE-k3-FAG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Sy1-qp-64D"/>
+                            <constraint firstItem="myE-k3-FAG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eaS-rW-Xd2"/>
+                            <constraint firstItem="Wsp-ow-GE9" firstAttribute="width" secondItem="3kN-Gz-ygM" secondAttribute="width" id="jY4-cT-x6R"/>
+                            <constraint firstItem="UuT-tW-CiR" firstAttribute="height" secondItem="3kN-Gz-ygM" secondAttribute="height" id="mdV-bB-hha"/>
+                            <constraint firstItem="3kN-Gz-ygM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tOt-kS-GCW"/>
+                            <constraint firstItem="myE-k3-FAG" firstAttribute="top" secondItem="3kN-Gz-ygM" secondAttribute="bottom" constant="22" id="xcC-tm-VBA"/>
+                            <constraint firstItem="UuT-tW-CiR" firstAttribute="width" secondItem="3kN-Gz-ygM" secondAttribute="width" id="xpv-KC-rco"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="user1" destination="3kN-Gz-ygM" id="dSP-xU-86R"/>
+                        <outlet property="user2" destination="Wsp-ow-GE9" id="IRA-eF-8Jl"/>
+                        <outlet property="user3" destination="UuT-tW-CiR" id="0op-GN-JMx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92" y="170"/>
+        </scene>
+    </scenes>
+</document>
